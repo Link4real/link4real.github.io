@@ -7,3 +7,7 @@ p {
 color: white;
 text-align: center;
 }
+
+body {
+  background-image: url("canada.png");
+}
