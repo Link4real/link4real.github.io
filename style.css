@@ -1,10 +1,19 @@
 ul {
+	position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	background-color: #333;
+	
+body {
+  background-image: url("forest.png");
+}
+
 }
 ul li {
+	  float: left;
 	display: inline-block;
 	position: relative;
 	text-align: left;
@@ -23,6 +32,15 @@ ul li a {
 }
 ul li a:hover {
 	background-color: #555;
+	
+img {
+text-align: center;
+}
+	
+.active {
+background-color: #4a4a4a;
+}
+	
 }
 ul li ul.dropdown {
 	min-width: 100%;
