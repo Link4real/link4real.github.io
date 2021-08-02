@@ -1,11 +1,13 @@
 h1 {
 color: white;
 text-align: center;
+font-family: "Minecraft";
 }
 
 p {
 color: white;
 text-align: center;
+font-family: "Minecraft";
 }
 
 body {
@@ -21,10 +23,12 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  font-family: "Minecraft";
 }
 
 li {
   float: left;
+  font-family: "Minecraft";
 }
 
 li a {
@@ -33,10 +37,12 @@ li a {
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
+  font-family: "Minecraft";
 }
 
 li a:hover {
   background-color: #111;
+  font-family: "Minecraft";
 }
 
 
