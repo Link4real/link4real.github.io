@@ -10,7 +10,7 @@ h1 {
     }
     
     body {
-      background-image: url('assets/background.svg');
+      background-color: #021f35;
       margin: 0;
       color: white;
       font-family: 'Prompt', sans-serif;
