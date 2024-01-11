@@ -3,64 +3,60 @@ h1 {
     text-align: center;
     font-size: 75px;
     }
-    
+
+h2 {
+     font-size: 35px;
+      color: white;
+      text-align: center;
+      font-family: 'Prompt', sans-serif;
+    }
+h3 {
+     font-size: 30px;
+color:white;
+text-align:center;
+font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: underlined;
+}
     p {
     color: white;
     text-align: center;
     }
-    
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding: 1.5rem;
+    }
+
     body {
-      background-color: #021f35;
+      font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+      font-weight: normal;
+      font-size: 18px;
+      color: #383838;
+      background-color: #242323;
+      background-image: url("assets/background.webp");
+      background-repeat: repeat;
+      background-attachment: scroll;
+      overflow-x: hidden;
       margin: 0;
-      color: white;
-      font-family: 'Prompt', sans-serif;
-    }
-    
-    section {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        }
 
-    img {
+
+    footer {
+    font-family: 'Prompt';
     text-align: center;
-    }
-
-
-    .spacer {
-        aspect-ratio: 1080/230;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .layer1 {
-        background-image: url('assets/layer1.svg');
-    }
-    .layer2 {
-        background-image: url('assets/layer2.svg');
-    }
-    .layer3 {
-        background-image: url('assets/layer3.svg');
-    }
-
-    .layer4 {
-        background-image: url('assets/layer4.svg');
-    }
-
-    .flip {
-        transform: rotate(180deg);
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    float: right;
+    color: white;
     }
 
     .slogan {
-        font-size: 25px;
-        color: white;
-        text-align: center;
-    }
-
-    .downloadslogan {
         font-size: 25px;
         color: white;
         text-align: center;
@@ -70,7 +66,7 @@ h1 {
         background-color: #ffffff;
         border: none;
         color: white;
-        padding: 16px 32px;
+        padding: 19px 20px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -78,7 +74,7 @@ h1 {
         margin: 4px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
-        width: 250px;
+        width: 200px;
     }
 
     .button1 {
@@ -86,70 +82,98 @@ h1 {
         color: black;
       }
 
-      .wave {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-    }
-    
-    .wave svg {
-        position: relative;
-        display: block;
-        width: calc(108% + 1.3px);
-        height: 189px;
-    }
-    
-    .wave .shape-fill {
-        fill: #022F9B;
-    }
-
-    .red {
-        background-color: #dd3f31;
-    }
 
 
     ul {
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
-        top: 0;
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #333;
+        background: rgba(0, 0, 0, 0.7);
       }
-      
+
       li {
         float: left;
-          border-right: 1px solid #737874;
       }
-      
-      li a {
-        display: block;
+
+      li a, .dropbtn  {
+        display: inline-block;
         color: white;
         text-align: center;
-    
-        padding: 20px 16px;
+        padding: 20px 20px;
         text-decoration: none;
       }
-      
-      li a:hover {
+
+      li a:hover, .dropdown:hover .dropbtn {
         background-color: #111;
+          transition-duration: 0.4s;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
       }
-      
-      
+
       img {
       text-align: center;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+          user-drag: none;
+          -webkit-user-drag: none;
+          user-select: none;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;
       }
-      
-      
+
+
       .active {
-      background-color: #4a4a4a;
+        background-color: #111;
       }
-      
+
       li:last-child {
         border-right: none;
       }
+
+      li.dropdown {
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #111;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 20px 20px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background: rgba(0, 0, 0, 0.3);
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+}
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+}
+* {
+  box-sizing: border-box;
+}
